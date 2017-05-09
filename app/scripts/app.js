@@ -12,12 +12,19 @@
         })
          .state('album', {
              url: '/album/',
+             controller: 'AlbumCtrl as album',
              templateUrl: '/templates/album.html'
         });
         .state('colletion', {
              url: '/collection/',
+             controller: 'CollectionCtrl as collection',
              templateUrl: '/templates/collection.html'
         });
+        .state ('albumdata', {
+             url: '/albumdata'
+            : '/scripts/fixtures.js'
+        })
+        
     }
     
     angular
